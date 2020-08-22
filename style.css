@@ -70,6 +70,7 @@ td {
     width: 50%;
     float: right;
     text-align: center;
+    display: block;
 }
 
 .video {
@@ -94,6 +95,9 @@ img {
 
 hr {
     color: white;
+}
+footer {
+    display: inline-block;
 }
 
 @media only screen and (max-width: 768px) {
@@ -133,6 +137,11 @@ hr {
       }
       #nav_bar li {
         display: inline;
-        padding:;
       }
+      .progress {
+        width: 50%;
+        float: right;
+        text-align: center;
+        display: block;
+    }
   }
