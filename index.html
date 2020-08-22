@@ -1,0 +1,102 @@
+<!-- HTML 5 Tags used:
+1. nav tag
+2. header tag
+3. mark tag
+4. time tag
+5. hgroup tag
+6. fig tag
+7. figcaption tag
+8. progress tag
+9. video tag
+10. source tag
+11. footer tag -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="nav_bar">
+    <nav id="nav_bar">
+        <ul>
+            <li class="nav_links"><a href="https://drive.google.com/drive/u/1/folders/0B7aSD-CAncePfkFwQ3lQMGd6U0h1bDBvdmcySFBzSTFSQ3czZEVPZEZqQmhYbWxweHNrVWM" target="_blank">Assignments</a></li>
+            <li class="nav_links"><a href="#" target="_blank">Video Lectures</a></li>
+            <li class="nav_links"><a href="#" target="_blank">Study Materials</a></li>
+            <li class="nav_links"><a href="https://drive.google.com/file/d/1BMJihM4Xstbxe5Sy4GAf5VNbMeHp6A7Z/view" target="_blank">Textbooks</a></li>
+            <li class="nav_links"><a href="https://classroom.google.com/u/0/w/MTIxODg2MTY0OTI2/t/all" target="_blank">Your Work.</a></li>
+        </ul>
+    </nav>       
+</div>
+
+    <header>
+        <h1>Welcome to 15IT304J Web Programming.</h1>
+        <p>This is your one spot destination for <mark>Assignments,Video lectures, Study Materials and many more!<mark></mark></p>
+
+    </header>
+    <div class="main">
+      <div class="video">
+        <video playsinline autoplay muted loop>
+          <source src="Welcome video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>  
+      </div>
+      <div class="Info">
+        <hgroup>
+        <h2>Student Information:</h2>
+        <h3>SRMIST</h3>
+        </hgroup>
+        <div id="left">
+            <table>
+                <tr>
+                  <td>Name:</td>
+                  <td>Sathwik Amburi</td>
+                </tr>
+                <tr>
+                  <td>Registration Number:</td>
+                  <td>RA1711003010271</td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td>2nd December 1999</td>
+                  </tr>
+                  <tr>
+                    <td>Semester:</td>
+                    <td>7th Semester</td>
+                  </tr>
+              </table>      
+     
+        </div>
+
+          <div id="right">
+            <figure>
+              <img src="Thumbnail.jpg" alt="STudent Photo" width=50%>
+              <figcaption>Sathwik Amburi</figcaption>
+            </figure>
+           
+          </div>
+          <div class="progress">
+            <label for="file">Course Completion Progress:</label>
+            <progress id="file" value="10" max="100"> 32% </progress> 
+          </div>
+    </div>
+    </div>
+    <hr>
+    
+<footer>
+  <div  class="Date">
+    <p id="Date">Date/Time: <time> <span id="datetime"></span></time></p>
+    <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleString();
+        </script>
+</div>
+<ul>
+  <li>Faculty: Dr.R.I.Minu (102454)</li>
+  <li>Topic: HTML 5 Tags</li>
+</ul>
+</footer>
+</body>
+</html>
